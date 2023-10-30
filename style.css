@@ -1,0 +1,101 @@
+:root {
+    --secondary: #DC7000;
+    --white: #FFFFFF;
+    --bg: url("assets/bg.png");
+}
+
+*, html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: var(--secondary);
+    color: var(--white);
+    height: 80px;
+}
+
+nav .menu ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    align-items: center;
+}
+
+nav .menu ul > *{
+    cursor: pointer;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: var(--white);
+    border-bottom: 1px solid transparent;
+    transition: border-bottom ease-in 0.15s;
+}
+
+.menu ul li a:hover{
+    border-bottom: 1px solid var(--white);
+}
+
+ul > .contact-button{
+    background-color: white;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: var(--secondary);
+    border-radius: 3px;
+}
+
+section{
+    height: 100vh;
+}
+
+.hero{
+    background-image: var(--bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 200px;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 60vh;
+    width: 40vw;
+}
+
+.hero-content > h3{
+    color: var(--secondary);
+}
+
+.hero-content > h1{
+    font-size: 60px;
+}
+
+.hero-content > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--secondary);
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    color: var(--white);
+}
+
+.hero-image {
+    max-width: 50vw;
+}
