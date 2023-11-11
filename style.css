@@ -75,7 +75,6 @@ section{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    height: 60vh;
     width: 40vw;
 }
 
@@ -87,7 +86,7 @@ section{
     font-size: 60px;
 }
 
-.hero-content > a{
+.hero-button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,6 +154,7 @@ section{
     grid-template-columns: repeat(4 , 1fr);
     justify-items: center;
     align-items: center;
+    gap: 50px;
 }
 
 .service__items > :nth-child(5) {
@@ -169,15 +169,20 @@ section{
     gap: 20px;
 }
 
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .product{
     background-color: var(--accent);
-    display: flex;
-    flex-direction: column;
-    position: relative;
 }
 
 .product__description {
     padding: 75px 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .product__cards {
@@ -186,6 +191,16 @@ section{
     overflow-x: auto;
     gap: 20px;
     padding: 50px 0;
+    width: 99vw;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .card {
@@ -202,13 +217,11 @@ section{
 }
 
 .card .label {
-    background-color: #E0BBE4;
-    color: #5F0F40;
-    font-size: 0.85rem;
+    font-size: 1rem;
     padding: 5px 16px;
     margin-bottom: 16px;
     width: fit-content;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .card h1 {
@@ -220,7 +233,6 @@ section{
 
 .card p {
     font-size: 0.9rem;
-    color: #666;
     margin-bottom: 16px;
 }
 
@@ -236,4 +248,13 @@ section{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.arrow__button{
+    display: flex;
+    gap: 50px;
+}
+
+.arrow__button > img {
+    cursor: pointer;
 }
