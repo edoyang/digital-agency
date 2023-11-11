@@ -8,7 +8,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-y: hidden;
+}
+
+.pre{
+    white-space: pre-line;
 }
 
 nav{
@@ -53,7 +56,7 @@ ul > .contact-button{
 }
 
 section{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .hero{
@@ -61,7 +64,6 @@ section{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -98,4 +100,33 @@ section{
 
 .hero-image {
     max-width: 50vw;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.description {
+    position: relative;
+    margin: 0 100px;
+    width: auto;
+    text-align: left;
+    width: 1370px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image{
+    position: relative;
+}
+
+.description .svg{
+    position: absolute;
+    right: 0;
+    top: -20px;
+    z-index: -1;
 }
