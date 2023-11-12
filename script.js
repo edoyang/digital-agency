@@ -164,3 +164,38 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial cloning of cards
     cloneCards();
 });
+
+const project = [
+    { image: "assets/project1.png", class: "project1", width: 382},
+    { image: "assets/project2.png", class: "project2", width: 382},
+    { image: "assets/project3.png", class: "project3", width: 382},
+    { image: "assets/project4.png", class: "project4", width: 246},
+    { image: "assets/project5.png", class: "project5", width: 412},
+    { image: "assets/project6.png", class: "project6", width: 488},
+ ];
+
+ function createProjectItem(project) {
+    const itemDiv = document.createElement('div');
+    itemDiv.className = 'item';
+
+    const img = document.createElement('img');
+    img.width = project.width;
+    img.height = 223;
+    img.src = project.image;
+    img.alt = project.image;
+    img.className = project.class;
+    itemDiv.appendChild(img);
+
+    return itemDiv;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const projectContainer = document.querySelector('.project__items');
+    if (projectContainer) {
+        project.forEach(p => {
+            projectContainer.appendChild(createProjectItem(p));
+        });
+    } else {
+        console.error('Project container not found');
+    }
+});

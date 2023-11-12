@@ -258,3 +258,26 @@ section{
 .arrow__button > img {
     cursor: pointer;
 }
+
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.project__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.project__items{
+    padding: 0 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
