@@ -1,0 +1,176 @@
+@media (max-width:1024px){
+
+    .hero-content{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-image{
+        display: none;
+    }
+
+    .description{
+        width: 80vw;
+    }
+
+    .image, .image img {
+        width: 80vw;
+    }
+
+    .image .svg{
+        display: none;
+    }
+
+    .service__items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product__cards{
+        max-width: 98vw;
+    }
+
+    .project__items .item img{
+        height: 100px;
+    }
+
+    .project__description__image {
+        display: none;
+    }
+
+    .project__description__text {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .subscription{
+        padding: 10px;
+    }
+
+    .footer__content{
+        padding: 50px;
+    }
+}
+
+@media (max-width:768px){
+
+    .hero{
+        padding: 0 50px;
+    }
+    .hero-content{
+        width: 100vw;
+    }
+
+    .service__items .item h1{
+        font-size: 16px;
+    }
+
+    .service__items .item img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .service__items .item a img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .project__items {
+        padding: 0 100px;
+    }
+
+    .box__text {
+        padding: 0 50px;
+    }
+
+    .footer__content{
+        padding: 50px;
+    }
+
+    .footer__content .context, .contact__us{
+        width: 200px;
+    }
+
+    .about__us{
+        width: 150px;
+    }
+
+    .social__media{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 0;
+    }
+}
+
+@media (max-width:430px) {
+    nav{
+        display: none;
+    }
+
+    * h2{
+        font-size: 1em;
+    }
+    * h1{
+        font-size: 1.2em;
+    }
+
+    .hero {
+        justify-content: space-between;
+        padding: 0 25px;
+    }
+
+    .service__items{
+        padding: 0;
+        gap: 15px;
+    }
+
+    .service__description{
+        padding: 0 25px;
+    }
+
+    .description {
+        margin: 0;
+        align-self: center;
+    }
+
+    .arrow__button{
+        display: none;
+    }
+
+    .product__description{
+        padding: 25px;
+    }
+
+    .product__cards {
+        padding: 25px 0;
+    }
+
+    .product__cards .card{
+        width: 200px;
+    }
+
+    .project__items{
+        padding: 0 5px;
+        gap:5px;
+    }
+
+    .project__items .item img{
+        height: 68px;
+    }
+
+    .project__description{
+        padding: 10px;
+    }
+
+    .subscription__box{
+        flex-direction: column;
+    }
+
+    .footer__content{
+        padding: 15px;
+        justify-content: center;
+    }
+    .about__us, .contact__us{
+        display: none;
+    }
+}
