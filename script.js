@@ -123,6 +123,7 @@ card.forEach(card => {
 document.addEventListener('DOMContentLoaded', () => {
     const productCardsContainer = document.querySelector('.product__cards');
     let cards = document.querySelectorAll('.product__cards .card');
+    let scrollDebounceTimer;
 
     // Function to clone all cards in the set
     const cloneCards = () => {
@@ -134,24 +135,31 @@ document.addEventListener('DOMContentLoaded', () => {
         cards = document.querySelectorAll('.product__cards .card');
     };
 
-    // Scroll Right by 300px
-    const scrollRight = () => {
-        productCardsContainer.scrollLeft += 300;
-        checkAndCloneCards();
-    };
-
-    // Scroll Left by 300px
-    const scrollLeft = () => {
-        productCardsContainer.scrollLeft -= 300;
-        checkAndCloneCards();
-    };
-
     // Check if need to clone cards (based on scroll position)
     const checkAndCloneCards = () => {
         const maxScrollLeft = productCardsContainer.scrollWidth - productCardsContainer.clientWidth;
         if (productCardsContainer.scrollLeft > maxScrollLeft - 300) {
             cloneCards();
         }
+    };
+
+    // Debounced Scroll Event Handler
+    const debouncedScrollHandler = () => {
+        clearTimeout(scrollDebounceTimer);
+        scrollDebounceTimer = setTimeout(checkAndCloneCards, 100);
+    };
+
+    // Attach the debounced scroll event listener
+    productCardsContainer.addEventListener('scroll', debouncedScrollHandler);
+
+    // Scroll Right by 300px
+    const scrollRight = () => {
+        productCardsContainer.scrollLeft += 300;
+    };
+
+    // Scroll Left by 300px
+    const scrollLeft = () => {
+        productCardsContainer.scrollLeft -= 300;
     };
 
     // Attach event listeners to arrow buttons
