@@ -8,18 +8,6 @@
     </head>
     <body>
         <nav>
-            <div class="logo">
-                <h1>LOGO</h1>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About Us</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#News">News</a></li>
-                    <button class="contact-button">Contact Us</button>
-                </ul>
-            </div>
         </nav>
         <section class="hero">
             <div class="hero-content">
@@ -82,7 +70,31 @@
             <div class="project__items">
                 <!-- Check Javascript -->
             </div>
+            <div class="project__description">
+                <img class="project__description__image" src="assets/project__description__image.png" alt="project__description__image">
+                <div class="project__description__text pre">
+                    <h1>Lorem Ipsum is simply dummy 
+                        text dummy text.</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown 
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <a href="#" class="hero-button"> Read More</a>
+                </div>
+            </div>
         </section>
-        <script src="script.js"></script>
+        <footer>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+$(function() {
+    $("nav").load("navbar.html");
+    $("footer").load("footer.html", function() {
+        initializeSocmed();
+    });
+});
+        </script>
+                <script src="script.js"></script>
     </body>
 </html>

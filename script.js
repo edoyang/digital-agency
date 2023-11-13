@@ -166,12 +166,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const project = [
-    { image: "assets/project1.png", class: "project1", width: 382},
-    { image: "assets/project2.png", class: "project2", width: 382},
-    { image: "assets/project3.png", class: "project3", width: 382},
-    { image: "assets/project4.png", class: "project4", width: 246},
-    { image: "assets/project5.png", class: "project5", width: 412},
-    { image: "assets/project6.png", class: "project6", width: 488},
+    { image: "assets/project1.png", class: "project1"},
+    { image: "assets/project2.png", class: "project2"},
+    { image: "assets/project3.png", class: "project3"},
+    { image: "assets/project4.png", class: "project4"},
+    { image: "assets/project5.png", class: "project5"},
+    { image: "assets/project6.png", class: "project6"},
  ];
 
  function createProjectItem(project) {
@@ -179,8 +179,6 @@ const project = [
     itemDiv.className = 'item';
 
     const img = document.createElement('img');
-    img.width = project.width;
-    img.height = 223;
     img.src = project.image;
     img.alt = project.image;
     img.className = project.class;
@@ -199,3 +197,40 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Project container not found');
     }
 });
+
+const socmed = [
+    { image: "assets/socmed1.svg", class: "socmed1", href:"#"},
+    { image: "assets/socmed2.svg", class: "socmed2", href:"#"},
+    { image: "assets/socmed3.svg", class: "socmed3", href:"#"},
+    { image: "assets/socmed4.svg", class: "socmed4", href:"#"}
+];
+
+// Function to create a social media item
+function createSocmedItem(socmed) {
+    const itemDiv = document.createElement('div');
+    itemDiv.className = 'socmed__item';
+
+    const anchor = document.createElement('a');
+    anchor.href = socmed.href;
+    itemDiv.appendChild(anchor)
+
+    const img = document.createElement('img');
+    img.src = socmed.image;
+    img.alt = socmed.image;
+    img.className = socmed.class;
+    anchor.appendChild(img);
+
+    return itemDiv;
+}
+
+// Function to initialize the social media items
+function initializeSocmed() {
+    const socmedContainer = document.querySelector('.social__media');
+    if (socmedContainer) {
+        socmed.forEach(socmed => {
+            socmedContainer.appendChild(createSocmedItem(socmed));
+        });
+    } else {
+        console.error('Social media container not found');
+    }
+}

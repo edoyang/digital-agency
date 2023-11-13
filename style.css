@@ -2,6 +2,7 @@
     --secondary: #DC7000;
     --accent: #F5F5F5;
     --white: #FFFFFF;
+    --footer: #1B1B1B;
     --bg: url("assets/bg.png");
 }
 
@@ -9,6 +10,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 .pre{
@@ -188,19 +190,17 @@ section{
 .product__cards {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
     gap: 20px;
     padding: 50px 0;
     width: 99vw;
     overflow-x: auto;
     scroll-behavior: smooth;
-    overflow-x: auto;
-    scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    &::-webkit-scrollbar {
-        display: none;
-    }
+}
+
+.product__cards::-webkit-scrollbar {
+    display: none;
 }
 
 .card {
@@ -280,4 +280,122 @@ section{
     gap: 30px;
     justify-content: center;
     align-items: center;
+}
+
+.project__items .item > img{
+    height: 250px;
+}
+
+.project__description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 200px;
+}
+
+.project__description__image{
+    flex: 1;
+    width: 30vw;
+}
+
+.project__description__text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 50px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.subscription{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 200px;
+}
+
+.subscription__box{
+    display: flex;
+    position: relative;
+    background-color: var(--footer);
+    color: var(--white);
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+
+.box__input {
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+  
+.box__input input[type="email"] {
+    padding: 15px 25px 15px 15px;
+    font-size: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 250px;
+    padding-right: 80px;
+}
+  
+.box__input button {
+    position: absolute;
+    top: 6.5px;
+    right: 6px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffa500;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+  
+.box__input input[type="email"]:focus {
+    border-color: #ffa500;
+}
+
+.box__input input[type="email"]::placeholder {
+  font-size: 12px;
+  text-align: left;
+}
+  
+.box__input button:hover {
+    background-color: #ff8700;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--footer);
+    color: var(--white);
+    padding: 50px 100px;
+}
+
+.footer__content > * {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__content > * ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.social__media{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-self: end;
 }
