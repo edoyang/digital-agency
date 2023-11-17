@@ -31,7 +31,7 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 200px;
+    padding: 0 100px;
 }
 
 .hero-content{
@@ -115,7 +115,7 @@ section{
 
 .service__items {
     display: grid;
-    padding: 0 50px;
+    padding: 0 100px;
     grid-template-columns: repeat(4 , 1fr);
     justify-items: center;
     align-items: center;
@@ -275,7 +275,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 200px;
+    padding: 0 100px;
 }
 
 .project__description__image{
