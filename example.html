@@ -17,19 +17,16 @@
     } 
     
     nav {
-    display: flex;
-    position: sticky;
-    top: 0;
-    justify-content: space-between;
-    padding: 0 20px;
-    align-items: center;
-    background-color: var(--secondary);
-    color: var(--white);
-    height: 80px;
-    width: 100vw;
-    z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        align-items: center;
+        background-color: var(--secondary);
+        color: var(--white);
+        height: 80px;
+        width: 100vw;
     }
-
+    
     .menu ul{
         display: flex;
         gap: 50px;
@@ -167,20 +164,9 @@
 <script>
 $(document).ready(function() {
     $(".hamburger").click(function() {
-        $(this).toggleClass("active");
-        $(".menu").toggleClass("open");
-    });
-    $(document.body).on("click", function(e) {
-        if (
-            !$(e.target).closest(".menu").length &&
-            !$(e.target).closest(".hamburger").length
-        ) {
-            // Close the menu by removing the 'active' class
-            $(".hamburger").removeClass("active");
-            $(".menu").removeClass("open");
-        }
-    });
-    
+    $(this).toggleClass("active");
+    $(".menu").toggleClass("open"); // Toggle on .menu
+});
     var path = window.location.pathname;
     var page = path.split("/").pop();
     var isHomePage = !page || page === 'index.html';

@@ -87,25 +87,11 @@
         </footer>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
-            $(document).ready(function() {
-            $("nav").load("navbar.html", function() {
-                var title = document.title;
-
-                $("nav .menu ul li a").each(function() {
-                if ($(this).text().trim() === title) {
-                    $(this).parent().css('list-style-type', 'disc');
-                } else {
-                    $(this).parent().css('list-style-type', 'none');
-                }
-                });
-            });
-
-            // Load the footer
-            $("footer").load("footer.html", function() {
-                initializeSocmed();
-            });
-            });
+          $(document).ready(function() {
+            $("nav").load("navbar.html");
+            $("footer").load("footer.html");
+        });
         </script>
-                <script src="script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

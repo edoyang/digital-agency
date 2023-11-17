@@ -125,17 +125,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let cards = document.querySelectorAll('.product__cards .card');
     let scrollDebounceTimer;
 
-    // Function to clone all cards in the set
     const cloneCards = () => {
         for (let i = 0; i < cards.length; i++) {
             const clone = cards[i].cloneNode(true);
             productCardsContainer.appendChild(clone);
         }
-        // Update the cards NodeList
         cards = document.querySelectorAll('.product__cards .card');
     };
 
-    // Check if need to clone cards (based on scroll position)
     const checkAndCloneCards = () => {
         const maxScrollLeft = productCardsContainer.scrollWidth - productCardsContainer.clientWidth;
         if (productCardsContainer.scrollLeft > maxScrollLeft - 300) {
@@ -143,21 +140,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Debounced Scroll Event Handler
     const debouncedScrollHandler = () => {
         clearTimeout(scrollDebounceTimer);
         scrollDebounceTimer = setTimeout(checkAndCloneCards, 100);
     };
 
-    // Attach the debounced scroll event listener
     productCardsContainer.addEventListener('scroll', debouncedScrollHandler);
 
-    // Scroll Right by 300px
     const scrollRight = () => {
         productCardsContainer.scrollLeft += 300;
     };
 
-    // Scroll Left by 300px
     const scrollLeft = () => {
         productCardsContainer.scrollLeft -= 300;
     };
@@ -173,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cloneCards();
 });
 
-const project = [
+const projects = [
     { image: "assets/project1.png", class: "project1"},
     { image: "assets/project2.png", class: "project2"},
     { image: "assets/project3.png", class: "project3"},
@@ -182,63 +175,38 @@ const project = [
     { image: "assets/project6.png", class: "project6"},
  ];
 
- function createProjectItem(project) {
-    const itemDiv = document.createElement('div');
-    itemDiv.className = 'item';
-
+function createProjectItem(project) {
     const img = document.createElement('img');
     img.src = project.image;
     img.alt = project.image;
     img.className = project.class;
-    itemDiv.appendChild(img);
 
-    return itemDiv;
+    return img;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    const topRow = document.createElement('div');
+    topRow.className = 'container top-row';
+
+    const bottomRow = document.createElement('div');
+    bottomRow.className = 'container bottom-row';
+
     const projectContainer = document.querySelector('.project__items');
     if (projectContainer) {
-        project.forEach(p => {
-            projectContainer.appendChild(createProjectItem(p));
+        // Append the first three projects to the top row
+        projects.slice(0, 3).forEach(p => {
+            topRow.appendChild(createProjectItem(p));
         });
+
+        // Append the last three projects to the bottom row
+        projects.slice(3).forEach(p => {
+            bottomRow.appendChild(createProjectItem(p));
+        });
+
+        // Append both rows to the main container
+        projectContainer.appendChild(topRow);
+        projectContainer.appendChild(bottomRow);
     } else {
         console.error('Project container not found');
     }
 });
-
-const socmed = [
-    { image: "assets/socmed1.svg", class: "socmed1", href:"#"},
-    { image: "assets/socmed2.svg", class: "socmed2", href:"#"},
-    { image: "assets/socmed3.svg", class: "socmed3", href:"#"},
-    { image: "assets/socmed4.svg", class: "socmed4", href:"#"}
-];
-
-// Function to create a social media item
-function createSocmedItem(socmed) {
-    const itemDiv = document.createElement('div');
-    itemDiv.className = 'socmed__item';
-
-    const anchor = document.createElement('a');
-    anchor.href = socmed.href;
-    itemDiv.appendChild(anchor)
-
-    const img = document.createElement('img');
-    img.src = socmed.image;
-    img.alt = socmed.image;
-    img.className = socmed.class;
-    anchor.appendChild(img);
-
-    return itemDiv;
-}
-
-// Function to initialize the social media items
-function initializeSocmed() {
-    const socmedContainer = document.querySelector('.social__media');
-    if (socmedContainer) {
-        socmed.forEach(socmed => {
-            socmedContainer.appendChild(createSocmedItem(socmed));
-        });
-    } else {
-        console.error('Social media container not found');
-    }
-}
