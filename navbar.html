@@ -188,7 +188,7 @@ $(document).ready(function() {
     $(".menu ul li a").each(function() {
         var href = $(this).attr('href');
 
-        if (isHomePage && href === '/') {
+        if (isHomePage && href === 'index.html') {
             $(this).parent().css('list-style-type', 'disc');
         } else if (!isHomePage && href.indexOf(page) !== -1) {
             $(this).parent().css('list-style-type', 'disc');
