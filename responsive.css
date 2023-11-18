@@ -67,11 +67,10 @@
         justify-content: center;
         text-align: center;
     }
+
 }
 
 @media (max-width:768px){
-
-
     .hero-content{
         width: 100vw;
     }
@@ -93,6 +92,16 @@
     .container img{
         height: 70px;
     }
+
+    .box__input > button{
+        position: relative !important;
+        width: 100%;
+        left: 0;
+    }
+
+    .box__input > input{
+        width: 100% !important;
+    }
 }
 
 @media (max-width:430px) {
@@ -108,7 +117,7 @@
     }
 
     .service__items{
-        gap: 15px;
+        gap: 20px;
     }
 
     .description {
@@ -133,11 +142,15 @@
     }
 
     .project__items{
-        padding: 0 50px;
-        gap:5px;
+        gap:10px;
+    }
+
+    .project__items img{
+        height: 55px;
+    
     }
     .container{
-        gap: 5px;
+        gap: 10px;
     }
 
     .project__items .item img{

@@ -124,7 +124,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 50px;
-    width: 100%;
+    width: 80%;
 }
 
 .service__items > :nth-child(5) {
@@ -134,9 +134,10 @@ section{
 .item{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
+    height: 200px;
 }
 
 .products{
