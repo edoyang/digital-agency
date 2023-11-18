@@ -74,7 +74,6 @@
     justify-content: space-between;
     background-color: var(--footer);
     color: var(--white);
-    padding: 50px 100px;
 }
 
 .footer__content > * {
@@ -97,18 +96,17 @@
 }
 
 @media (max-width:1024px){
-    .subscription{
-        padding: 10px;
+    footer{
+        padding-top: 100px;
     }
-
-    .footer__content{
-        padding: 50px;
+    .padding-nm{
+        padding: 0 50px;
+    
     }
 }
 @media (max-width:768px){
     .subscription__box{
         font-size: 12px;
-        padding: 0 50px;
     }
 
     .footer__content{
@@ -135,7 +133,6 @@
     }
 
     .footer__content{
-        padding: 15px;
         justify-content: center;
     }
     .about__us, .contact__us{
@@ -144,14 +141,14 @@
 }
 </style>
 <div class="footer">
-    <div class="subscription">
+    <div class="subscription padding-nm">
         <div class="subscription__text">
             <h1>Lorem Ipsum</h1>
             <p>Lorem Ipsum is simply dummy text of printing and typesetting
             industry.
             </p>
         </div>
-        <div class="subscription__box">
+        <div class="subscription__box padding-sm">
             <div class="box__text">
                 <h2>Stay in the loop</h2>
                 <p>Subscribe to receive the latest news and updates about TDA.
@@ -163,7 +160,7 @@
             </div>
         </div>
     </div>
-    <div class="footer__content">
+    <div class="footer__content padding-nm">
         <div class="context">
             <h1>LOGO</h1>
             <p class="pre">Lorem Ipsum is simply dummy text of the

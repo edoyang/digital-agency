@@ -1,10 +1,27 @@
 @media (max-width:1024px){
+    h1{
+        font-size: 1.25em;
+    }
+
+    h2{
+        font-size: 1em;
+    }
+
+    .padding-nm{
+        padding: 0 50px;
+    }
+
+    .padding-sm{
+        padding: 0 25px;
+    }
 
     .hero-content{
         text-align: center;
         justify-content: center;
         align-items: center;
+        width: 80vw;
     }
+
     .hero-image{
         display: none;
     }
@@ -19,6 +36,10 @@
 
     .image .svg{
         display: none;
+    }
+
+    .service{
+        margin-top: 50px;
     }
 
     .service__items{
@@ -50,9 +71,7 @@
 
 @media (max-width:768px){
 
-    .hero{
-        padding: 0 50px;
-    }
+
     .hero-content{
         width: 100vw;
     }
@@ -71,10 +90,6 @@
         width: 30px;
     }
 
-    .project__items, .project__header{
-        padding: 0 100px;
-    }
-
     .container img{
         height: 70px;
     }
@@ -85,21 +100,15 @@
         font-size: 1em;
     }
     * h1{
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .hero {
         justify-content: space-between;
-        padding: 0 25px;
     }
 
     .service__items{
-        padding: 0;
         gap: 15px;
-    }
-
-    .service__description{
-        padding: 0 25px;
     }
 
     .description {
@@ -107,12 +116,12 @@
         align-self: center;
     }
 
-    .arrow__button{
-        display: none;
+    .service__description > p{
+        margin: 0 50px;
     }
 
-    .product__description{
-        padding: 25px;
+    .arrow__button{
+        display: none;
     }
 
     .product__cards {
@@ -124,15 +133,18 @@
     }
 
     .project__items{
-        padding: 0 5px;
+        padding: 0 50px;
         gap:5px;
+    }
+    .container{
+        gap: 5px;
     }
 
     .project__items .item img{
         height: 68px;
     }
 
-    .project__description{
-        padding: 10px;
+    .project__header{
+        margin: 0 50px;
     }
 }

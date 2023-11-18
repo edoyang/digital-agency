@@ -15,6 +15,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.padding-nm{
+    padding: 0 100px;
+}
+
+.padding-sm{
+    padding: 0 50px;
+}
+
 .pre{
     white-space: pre-line;
 }
@@ -31,7 +39,6 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 100px;
 }
 
 .hero-content{
@@ -69,7 +76,6 @@ section{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 100px 0;
 }
 
 .description {
@@ -101,7 +107,6 @@ section{
     flex-direction: column;
     text-align: center;
     gap: 100px;
-
 }
 
 .service__content{
@@ -115,11 +120,11 @@ section{
 
 .service__items {
     display: grid;
-    padding: 0 100px;
     grid-template-columns: repeat(4 , 1fr);
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     gap: 50px;
+    width: 100%;
 }
 
 .service__items > :nth-child(5) {
@@ -145,9 +150,9 @@ section{
 }
 
 .product__description {
-    padding: 75px 100px;
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .product__cards {
@@ -275,7 +280,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 100px;
+    width: 100%;
 }
 
 .project__description__image{
