@@ -1,154 +1,13 @@
-<style>  
-.footer{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.footer ul{
-    list-style: none;
-}
-
-.subscription{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 0 100px;
-}
-
-.subscription__box{
-    display: flex;
-    position: relative;
-    background-color: var(--footer);
-    color: var(--white);
-    height: 200px;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 15px;
-}
-
-.box__input {
-    position: relative;
-    font-family: Arial, sans-serif;
-}
-  
-.box__input input[type="email"] {
-    padding: 15px 25px 15px 15px;
-    font-size: 12px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    width: 250px;
-    padding-right: 80px;
-}
-  
-.box__input button {
-    position: absolute;
-    top: 6.5px;
-    right: 6px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #ffa500;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
-}
-  
-.box__input input[type="email"]:focus {
-    border-color: #ffa500;
-}
-
-.box__input input[type="email"]::placeholder {
-  font-size: 12px;
-  text-align: left;
-}
-  
-.box__input button:hover {
-    background-color: #ff8700;
-}
-
-.footer__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--footer);
-    color: var(--white);
-}
-
-.footer__content > * {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footer__content > * ul {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.social__media{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    align-self: end;
-}
-
-@media (max-width:1024px){
-    footer{
-        padding-top: 100px;
-    }
-    .padding-nm{
-        padding: 0 50px;
-    
-    }
-}
-@media (max-width:768px){
-    .subscription__box{
-        font-size: 12px;
-    }
-
-    .footer__content{
-        padding: 50px;
-    }
-
-    .footer__content .context, .contact__us{
-        width: 200px;
-    }
-
-    .about__us{
-        width: 150px;
-    }
-
-    .social__media{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 0;
-    }
-}
-@media (max-width:430px){
-    .subscription__box{
-        flex-direction: column;
-    }
-
-    .footer__content{
-        justify-content: center;
-    }
-    .about__us, .contact__us{
-        display: none;
-    }
-}
-</style>
+<link rel="stylesheet" href="footer.css">
 <div class="footer">
-    <div class="subscription padding-nm">
+    <div class="subscription">
         <div class="subscription__text">
             <h1>Lorem Ipsum</h1>
             <p>Lorem Ipsum is simply dummy text of printing and typesetting
             industry.
             </p>
         </div>
-        <div class="subscription__box padding-sm">
+        <div class="subscription__box">
             <div class="box__text">
                 <h2>Stay in the loop</h2>
                 <p>Subscribe to receive the latest news and updates about TDA.
@@ -160,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div class="footer__content padding-nm">
+    <div class="footer__content ">
         <div class="context">
             <h1>LOGO</h1>
             <p class="pre">Lorem Ipsum is simply dummy text of the
