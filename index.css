@@ -44,23 +44,28 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: var(--padding-100) 0 0 0;
 }
 
 .description {
     position: relative;
     width: auto;
     text-align: left;
-    width: 1370px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 0 var(--padding-100);
 }
 
-.image{
+.images{
     position: relative;
     left: 0;
-    width: 1300px;
+    max-width: 80vw;
+}
+
+.image{
+    object-fit: cover;
+    width: 100%;
 }
 
 .description .svg{
@@ -88,11 +93,11 @@
 
 .service__items {
     display: grid;
-    grid-template-columns: repeat(4 , 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     align-items: center;
     gap: 50px;
-    width: 80%;
+    width: 100%;
 }
 
 .service__items > :nth-child(5) {
@@ -104,8 +109,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
     height: 200px;
+    width: 350px;
 }
 
 .products{
@@ -127,14 +132,13 @@
 
 .product__cards {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;  
     gap: 20px;
-    width: 99vw;
+    max-width: 99vw;
     overflow-x: auto;
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    padding: 0 var(--padding-50);
 }
 
 .product__cards::-webkit-scrollbar {
@@ -227,15 +231,18 @@
     gap: 20px;
 }
 
-.project__items img{
-    height: 224px;
-    object-fit: cover;
-}
-
 .container {
     display: flex;
     gap: 20px;
- }
+    max-width: 80vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__items img{
+    max-height: 16vw;
+    object-fit: cover;
+}
   
 .top-row {
     grid-template-areas: "project1 project2 project3";
