@@ -28,7 +28,6 @@ $(document.body).on("click", function(e) {
         !$(e.target).closest(".menu").length &&
         !$(e.target).closest(".hamburger").length
     ) {
-        // Close the menu by removing the 'active' class
         $(".hamburger").removeClass("active");
         $(".menu").removeClass("open");
     }
