@@ -41,20 +41,34 @@
                     <img src="assets/hero.png" alt="hero">
                 </div>
                 <div class="hero-carousel-btn">
-                    <img src="assets/arrow_left.svg" alt="arrow_left">
-                    <p>1 of 2</p>
-                    <img src="assets/arrow_right.svg" alt="arrow_right">
-                </div>
+                    <img src="assets/arrow_left.svg" alt="arrow_left" id="carousel-left-btn">
+                    <p id="carousel-index">1 of 2</p>
+                    <img src="assets/arrow_right.svg" alt="arrow_right" id="carousel-right-btn">
+                </div>                
+            </div>
+        </div>
+    </section>
+    <section class="about-background">
+        <h2>Why work with us</h2>
+        <div class="cards-container">
+        </div>
+    </section>
+    <section class="about-team">
+        <div class="team-background">
+            <div class="team-image">
+                <img src="#" alt="#">
+            </div>
+            <div class="team-description">
+                <p>Edoardo</p>
+                <h1>This is info about me</h1>
+                <p>A web developer is responsible for designing, coding and modifying websites, from layout to function, according to a client's specifications. They strive to create visually appealing sites that feature user-friendly design and clear navigation.</p> 
             </div>
         </div>
     </section>
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("nav").load("navbar.html");
-            $("footer").load("footer.html");
-        });
-    </script>
+    <script src="navFooter.js"></script>
+    <script src="about.js"></script>
+    <script src="carousel.js"></script>
 </body>
 </html>
