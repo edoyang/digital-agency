@@ -43,3 +43,11 @@ section{
 .btn-primary:active{
     background-color: #7d3f00;
 }
+
+.hero-location{
+    display: flex;
+}
+
+.hero-location:nth-child(1){
+    white-space: pre-wrap;
+}

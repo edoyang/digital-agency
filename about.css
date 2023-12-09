@@ -15,12 +15,7 @@
     justify-content: space-around;
     padding: var(--padding-100);
 }
-
-.hero-page-location{
-    display: flex;
-    gap: 5px;
-}
-.hero-page-location > p:nth-child(2){
+.hero-location > p:nth-child(2){
     color: #E47500 ;
 }
 
