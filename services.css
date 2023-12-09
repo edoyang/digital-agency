@@ -1,0 +1,41 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: var(--padding-100);
+}
+
+.hero-location{
+    display: flex;
+}
+
+.achievements{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.achievement-data{
+    display: grid;
+    text-align: left;
+    column-gap: 20px;
+    grid-template: 
+    "icon total"
+    "icon caption";
+}
+
+.achievement-data > img{
+    grid-area: icon;
+    min-width: 55px;
+    min-height: 55px;
+    background-color: #F5F5F5;
+}
+.total {
+    grid-area: total;
+    font-weight:bolder;
+}
+.caption {
+    grid-area: caption;
+}

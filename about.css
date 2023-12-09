@@ -111,14 +111,17 @@
 }
 
 .team-background{
-    padding: var(--padding-100);
+    padding: var(--padding-100) var(--padding-100) 0 var(--padding-100);
     display: flex;
+    gap: 100px;
+    justify-content: start;
+    background-color: #F5F5F5;
 }
 
 .team-image{
-    width: 50%;
-    height: 500px;
-    background-color: #F5F5F5;
+    min-width: 500px;
+    min-height: 500px;
+    background-color: white;
     align-items: center;
     justify-content: center;
 }
@@ -130,6 +133,50 @@
 }
 
 .team-description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 50%;
     height: 500px;
+}
+
+.our-team{
+    padding: 50px var(--padding-100) 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.team-members{
+    display: flex;
+    justify-content: space-between;
+}
+
+.member-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #F5F5F5;
+    width: 300px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: var(--padding-100);
+    background-color: #F5F5F5;
+}
+
+.brand-images{
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-images img{
+    min-width: 100px;
 }

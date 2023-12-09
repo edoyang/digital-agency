@@ -4,19 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="responsive.css">
     <title>Services</title>
 </head>
 <body>
     <nav></nav>
+    <section class="hero">
+        <div class="hero-location">
+            <p>Home ></p> <p>Services</p>
+        </div>
+        <div class="hero-title">
+            <h1>Welcome to Service Page</h1>
+        </div>
+        <div class="achievements">
+            <div class="achievement-data">
+                <img src="#" alt="#">
+                <p class="total" id="client-total">96</p>
+                <p class="caption">Clients</p>
+            </div>
+            <div class="achievement-data">
+                <img src="#" alt="#">
+                <p class="total" id="country-total">22</p>
+                <p class="caption">Countries</p>
+            </div>
+            <div class="achievement-data">
+                <img src="#" alt="#">
+                <p class="total" id="project-total">58</p>
+                <p class="caption">Project</p>
+            </div>
+        </div>
+    </section>
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("nav").load("navbar.html");
-            $("footer").load("footer.html");
-        });
-    </script>
+    <script src="navFooter.js"></script>
 </body>
 </html>
