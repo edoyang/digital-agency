@@ -2,22 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     text-align: center;
     padding: var(--padding-100);
-}
-
-.hero-location{
-    display: flex;
-}
-.hero-location:nth-child(1){
-    white-space: pre-wrap;
+    gap: 50px;
 }
 
 .achievements{
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    box-shadow:  8px 8px 8px #FFECEC;
+    height: 200px;
+    border-radius: 10px;
 }
 
 .achievement-data{
@@ -27,12 +24,13 @@
     grid-template: 
     "icon total"
     "icon caption";
+    max-height: 60px;
 }
 
 .achievement-data > img{
     grid-area: icon;
-    min-width: 55px;
-    min-height: 55px;
+    max-width: 55px;
+    max-height: 55px;
     background-color: #F5F5F5;
 }
 .total {
@@ -41,4 +39,112 @@
 }
 .caption {
     grid-area: caption;
+}
+
+.services-container > .item:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.services-container {
+    padding: var(--padding-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.item{
+    display: flex;
+    gap: 100px;
+}
+
+.item-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.item-content .body{
+    white-space: pre-line;
+}
+
+.item-content .read-more{
+    width: 180px;
+    height: 50px;
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+}
+
+.read-more:active{
+    background-color: var(--button-active);
+}
+
+.item img{
+    height: 500px;
+    width: 500px;
+    background-color: black;
+}
+
+.testimonials{
+    background-color: #f5f5f5;
+    height: max-content;
+    padding: var(--padding-100);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;
+}
+
+.sliders{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.slider{
+    height: 250px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: var(--padding-card);
+    border: 2px solid #00000030 ;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.slider:hover{
+    border: 2px solid var(--secondary);
+    background-color: white;
+}
+
+.slider-top{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment{
+    text-align: left;
+}
+
+.rating{
+    display: flex;
+}
+
+.indicator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button{
+    display: flex;
+    flex-direction: space-between;
 }

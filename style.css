@@ -12,6 +12,8 @@
     --padding-100: 100px;
     --padding-150: 150px;
     --padding-200: 200px;
+    
+    --button-active: #7d3f00;
 }
 
 *, html, body{
@@ -41,13 +43,30 @@ section{
 }
 
 .btn-primary:active{
-    background-color: #7d3f00;
+    background-color: var(--button-active);
 }
 
 .hero-location{
     display: flex;
 }
 
-.hero-location:nth-child(1){
+.hero-location > p:nth-child(2){
     white-space: pre-wrap;
+    color: #E47500 ;
+}
+
+.service-description{
+    display: flex;
+    gap: 100px;
+    padding: var(--padding-100);
+}
+
+.video-container{
+    min-height: 350px;
+    min-width: 700px;
+    background-color: violet;
+}
+
+.service-description ul{
+    list-style-type: none;
 }
