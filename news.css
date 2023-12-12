@@ -1,0 +1,113 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--padding-100);
+    gap: 50px;
+}
+
+.search-bar{
+    width: 500px;
+    height: 50px;
+    background-color: #F1F1F1;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 var(--padding-card);
+    gap: 20px;
+}
+
+.search-bar input, .search-bar input:focus, .search-bar input:focus-visible{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.search-bar button{
+    display: none;
+    border: none;
+}
+
+.typing button {
+    display: block;
+    cursor: pointer;
+}
+
+.news-content{
+    display: flex;
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-100);
+    flex: 1;
+    height: 200dvh;
+    justify-content: space-between;
+}
+.left{
+    gap: 100px;
+}
+.right {
+    gap: 20px;
+}
+
+.news-content img{
+    width: 600px;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.news-thumbnail{
+    display: flex;
+    padding: 0 var(--padding-100);
+    gap: 30px;
+}
+
+.news-thumbnail img{
+    height: 200px;
+    width: 200px;
+}
+
+.thumbnail-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1); 
+        opacity: 1;
+    }
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}

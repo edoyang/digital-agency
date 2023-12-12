@@ -37,11 +37,17 @@ nav {
 
 ul > .contact-button{
     background-color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
     border: none;
     width: 100px;
     height: 40px;
     color: var(--secondary);
     border-radius: 3px;
+    font-size: 13px;
 }
 
 .hamburger {

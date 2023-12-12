@@ -1,0 +1,102 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--padding-100);
+    gap: 50px;
+}
+
+.hero > img{
+    padding-top: var(--padding-50);
+}
+
+.how-to-contact, .contact-detail{
+    display: flex;
+}
+
+.how-to-contact{
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: var(--padding-50) 0;
+}
+
+.contact-detail{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-detail:first-child{
+    flex-direction: column;
+}
+
+line{
+    width: 2px;
+    height: 150px;
+    background-color: #00000015;
+}
+
+.top-vector, .bot-vector{
+    position: absolute;
+}
+
+.top-vector{
+    top: 0;
+    right: 0;
+}
+
+.bot-vector{
+    bottom: 0;
+    left: 0;
+}
+
+.mailing{
+    background-color: #F5F5F5;
+    padding: var(--padding-100);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 100vh;
+}
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form{
+    width: 100%;
+    padding: 0 calc(var(--padding-100) * 4);
+    display: grid;
+    grid-template-areas: 
+    "first-name last-name"
+    "email email"
+    "message message";
+    gap: 50px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input p{
+    align-self: flex-start;
+}
+
+.input input{
+    width: 100%;
+}
+
+.first-name{grid-area: first-name;}
+.last-name{grid-area: last-name;}
+.email{grid-area: email;}
+.message{grid-area: message;}

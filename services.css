@@ -45,6 +45,12 @@
     flex-direction: row-reverse;
 }
 
+line{
+    width: 2px;
+    height: 60%;
+    background-color: #00000015;
+}
+
 .services-container {
     padding: var(--padding-100);
     display: flex;
