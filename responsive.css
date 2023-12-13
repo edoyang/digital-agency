@@ -1,0 +1,178 @@
+@media screen and (max-width: 768px) {
+    .hero{
+        justify-content: center;
+    }
+    .hero-image, .hero-content p{
+        display: none;
+    }
+
+    .hero-content{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .service__items > :nth-child(5) {
+        grid-column-start: 1;
+    }
+
+    .service__items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project__description{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .project__description__text > .hero-button{
+        align-self: center;
+    }
+    
+    .hero > .right{
+        display: none;
+    }
+
+    .hero > .left {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-background > .cards-container > .card{
+        height: max-content;
+        justify-self: flex-start;
+        align-self: start;
+    }
+
+    .team-image > img{
+        height: 300px;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-background{
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .our-team > .team-members{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .member-card{
+        width: 250px;
+        height: 250px;
+    }
+
+    .brand-images{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 50px;
+    }
+
+    .service-description{
+        flex-direction: column;
+    }
+
+    .video img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services-container > .item > img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .services-container > .item {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-content > button{
+        align-self: center;
+    }
+
+    .services-container > .item:nth-child(2){
+        flex-direction: column;
+    }
+
+    .sliders{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .news-content{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .news-content > .right > .news-thumbnail{
+        padding: 0;
+        gap: 50px;
+    }
+
+    .hero img{
+        width: 80%;
+    }
+
+    .hero > .how-to-contact{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .how-to-contact{
+        justify-self: start;
+        align-items: start;
+    }
+
+    .how-to-contact > .contact-detail{
+        align-items: start;
+        justify-content: start;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .contact-detail:nth-child(1){
+        flex-direction: row-reverse;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .how-to-contact > line{
+        width: 80vh;
+        height: 2px;
+    }
+
+    .how-to-contact img{
+        width: 30px;
+    }
+
+    .how-to-contact > .contact-detail > .soc-med img{
+        width: 80px;
+    }
+
+    .mailing > .form{
+        padding: 0;
+    }
+}

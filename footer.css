@@ -98,11 +98,34 @@
     align-self: end;
 }
 
+.copyright{
+    display: none;
+    text-align: center;
+    color: white;
+    background-color: var(--footer);
+    margin-top: 50px;
+    padding: var(--padding-card);
+}
+
 @media (max-width:1024px){
 }
 @media (max-width:768px){
+    .footer__content{
+        display: none;
+    }
+
+    .copyright{
+        display: block;
+    }
+
     .subscription__box{
         font-size: 12px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .box__text{
+        padding: 0 10px;
     }
 
     .footer__content .context, .contact__us{
