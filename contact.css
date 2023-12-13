@@ -62,7 +62,8 @@ line{
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    height: 100vh;
+    height: 850px;
+    gap: 50px;
 }
 
 .introduction{
@@ -80,6 +81,7 @@ line{
     "email email"
     "message message";
     gap: 50px;
+    z-index: 1;
 }
 
 .input{
@@ -94,9 +96,15 @@ line{
 
 .input input{
     width: 100%;
+    height: 30px;   
 }
 
 .first-name{grid-area: first-name;}
 .last-name{grid-area: last-name;}
 .email{grid-area: email;}
 .message{grid-area: message;}
+
+.message textarea{
+    height: 200px;
+    padding: 5px;
+}

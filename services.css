@@ -31,7 +31,6 @@
     grid-area: icon;
     max-width: 55px;
     max-height: 55px;
-    background-color: #F5F5F5;
 }
 .total {
     grid-area: total;
@@ -58,6 +57,19 @@ line{
     align-items: center;
     justify-content: center;
     gap: 100px;
+}
+
+#checkers{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+#checkers li{
+    display: flex;
+    align-items: center;
 }
 
 .item{

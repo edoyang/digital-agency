@@ -114,17 +114,18 @@
 }
 
 .team-image{
-    min-width: 500px;
-    min-height: 500px;
     background-color: white;
     align-items: center;
     justify-content: center;
 }
 
 .team-image img{
+    display: flex;
     align-items: center;
     justify-content: center;
     object-position: center;
+    height: 500px;
+    width: 500px;
 }
 
 .team-description{

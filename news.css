@@ -56,10 +56,15 @@
     gap: 20px;
 }
 
+.first-news, .second-news{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .news-content img{
     width: 600px;
     height: 300px;
-    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,6 +93,23 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+}
+
+.author-name{
+    background-color: blue;
+    color: white;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.thumbnail-content .author-name{
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
 }
 
 @keyframes grow {

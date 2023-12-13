@@ -23,20 +23,20 @@
             <div class="contact-detail">
                 <p>Follow us</p>
                 <div class="soc-med">
-                    <img src="#" alt="#">
-                    <img src="#" alt="#">
-                    <img src="#" alt="#">
-                    <img src="#" alt="#">
+                    <a href="https://www.facebook.com/edoyangz"><img src="assets/socmed1.svg" alt="#"></a>
+                    <a href="https://www.instagram.com/edoyangz/"><img src="assets/socmed2.svg" alt="#"></a>
+                    <a href="https://twitter.com/edoyangg"><img src="assets/socmed3.svg" alt="#"></a>
+                    <a href="https://au.linkedin.com/in/edo-yang-574219249"><img src="assets/socmed4.svg" alt="#"></a>
                 </div>
             </div>
             <line></line>
             <div class="contact-detail">
-                <img src="#" alt="#">
+                <img src="assets/telephone.svg" alt="#">
                 +94 0000 00000
             </div>
             <line></line>
             <div class="contact-detail">
-                <img src="#" alt="#">
+                <img src="assets/location.svg" alt="#">
                 <p>but also the leap into electronic 
                     typesetting</p>
             </div>
@@ -47,25 +47,25 @@
             <h2>Say Hello</h2>
             <p>Want a website like this ? fill the form to send us an email</p>
         </div>
-        <form class="form" action="">
+        <form class="form" action="sendmail.php" method="post">
             <div class="input first-name">
                 <p>First Name</p>
-                <input type="text">
+                <input type="text" name="firstName">
             </div>
             <div class="input last-name">
                 <p>Last Name</p>
-                <input type="text">
+                <input type="text" name="lastName">
             </div>
             <div class="input email">
                 <p>Email Address</p>
-                <input type="email">
+                <input type="email" name="email">
             </div>
             <div class="input message">
                 <p>Message</p>
-                <input type="text">
+                <textarea name="message" placeholder="Write your message here"></textarea>
             </div>
             <button class="btn-primary get-in-touch" type="submit">Get in touch</button>
-        </form>
+        </form>        
         <img class="top-vector" src="assets/vector-top-right.svg" alt="top-vector">
         <img class="bot-vector" src="assets/vector-bot-right.svg" alt="bot-vector">
     </div>
