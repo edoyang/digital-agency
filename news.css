@@ -51,15 +51,20 @@
 }
 .left{
     gap: 100px;
+    flex: 1;
+    width: 50vw;
 }
 .right {
     gap: 20px;
+    flex: 1;
+    width: 50vw;
 }
 
 .first-news, .second-news{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    cursor: pointer;
 }
 
 .news-content img{
@@ -81,6 +86,7 @@
     display: flex;
     padding: 0 var(--padding-100);
     gap: 30px;
+    cursor: pointer;
 }
 
 .news-thumbnail img{
