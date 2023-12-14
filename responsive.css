@@ -1,3 +1,9 @@
+@media (max-width:1366px){
+    .hero .left, .hero .right{
+        height: 100vh;;
+    }
+}
+
 @media (max-width:1200px){
     .service__items{
         grid-template-columns: repeat(2, 1fr);
@@ -5,6 +11,34 @@
 
     .service__items > :nth-child(5) {
         grid-column-start: 1;
+    }
+
+    .hero img[alt=map]{
+        width: 80vw;
+    }
+
+    .hero > .how-to-contact{
+    flex-direction: column;
+    gap: 50px;
+    justify-self: start;
+    align-items: start;
+    width: 80vw;
+
+    }
+    .how-to-contact > line{
+    width: 80vw;
+    height: 2px;
+    }
+    .mailing .top-vector, .bot-vector{
+        max-width: 80vw;
+    }
+
+    .mailing
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
@@ -150,20 +184,6 @@
         gap: 50px;
     }
 
-    .hero img{
-        width: 80%;
-    }
-
-    .hero > .how-to-contact{
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .how-to-contact{
-        justify-self: start;
-        align-items: start;
-    }
-
     .how-to-contact > .contact-detail{
         align-items: start;
         justify-content: start;
@@ -178,21 +198,47 @@
         justify-content: center;
     }
 
-    .how-to-contact > line{
-        width: 80vh;
-        height: 2px;
-    }
-
     .how-to-contact img{
         width: 30px;
     }
 
     .how-to-contact > .contact-detail > .soc-med img{
-        width: 80px;
+        width: 10vw;
     }
 
     .mailing > .form{
         padding: 0;
+    }
+
+    /* about us */
+
+    .hero .right{
+        display: none;
+    }
+
+    .hero .left{
+        height: 80vh;
+        justify-content: space-between;
+    }
+
+    /* services */
+
+
+    /* news */
+
+    .hero .search-bar{
+        width: 80vw;
+    }
+
+    .search-bar img{
+        width: 5%;
+    }
+
+
+
+    .left img{
+        width: 80vw;
+        align-self: center;
     }
 }
 
@@ -212,14 +258,128 @@
     .description .images .svg{
         display: none;
     }
+
+    /* about us */
+
+    .about-background .cards-container{
+        flex-direction: column;
+    }
+
+    .about-background .cards-container .card{
+        width: 100%;
+    }
+
+    .our-team .team-members{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .our-team .team-members .member-card{
+        width: 100%;
+    }
+
+    .testimonials .brand-images {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 50px;
+    }
+
+    .testimonials .brand-images img{
+        height: auto;
+        width: 20%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .team-background{
+        display: none;
+    }
+
+    /* services */
+    .hero .achievements{
+        flex-direction: column;
+    }
+
+    .achievements line{
+        width: 80%;
+        height: 2px;
+    }
+
+    .achievements .achievement-data{
+        width: 200px;
+        gap: 0;
+    }
+
+    .achievement-data .caption, .achievement-data .total{
+        width: 100px;
+    }
+
+    /* news */
+    .right{
+        justify-content: center;
+        align-items: center;
+    }
+    .news-content > .right > .news-thumbnail{
+        flex-direction: column;
+        width: 80vw;
+        justify-content: center;
+        gap: 5px
+
+    }
+
+    .news-thumbnail img{
+        align-self: center  ;
+    }
 }
 
 @media (max-width: 400px){
     *, body, html{
-        outline: 1px solid black;
+        --padding-100: 20px;
     }
     .service__items{
         display: flex;
         flex-direction: column;
+    }
+
+    /* about us */
+
+    .testimonials .brand-images{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* services */
+    .achievement-data .caption, .achievement-data .total{
+        width: 50px;
+    }
+
+    .achievements .achievement-data{
+        width: 100px;
+    }
+
+    .sliders .slider{
+        width: 80%;
+        height: max-content;
+    }
+
+    /* news */
+
+    /* contact */
+    .how-to-contact > .contact-detail{
+        width: 80vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .how-to-contact > .contact-detail:first-child{
+        flex-direction: column-reverse;
+    }
+
+    .how-to-contact > .contact-detail > .soc-med img{
+        width: 50px;
+    }
+
+    .how-to-contact > .contact-detail{
+        gap: 5px;
     }
 }

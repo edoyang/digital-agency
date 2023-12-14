@@ -74,7 +74,7 @@ line{
 
 .form{
     width: 100%;
-    padding: 0 calc(var(--padding-100) * 4);
+    padding: 0 var(--padding-100);
     display: grid;
     grid-template-areas: 
     "first-name last-name"
