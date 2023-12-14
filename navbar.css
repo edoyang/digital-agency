@@ -106,6 +106,12 @@ ul > .contact-button{
     }    
 }
 
+@media (max-width:600px) {
+    nav{
+        --padding-100: 20px;
+    }
+}
+
 .hamburger.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
